@@ -49,7 +49,8 @@ extension ViewController: UITableViewDataSource {
         return users.keys.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.getSafely(index: section)?.count ?? 0
+        guard let count = users.getSafely(index: section)?.count else { return 0 }
+        return count + 1
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -59,10 +60,9 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: UserCell.identifier, for: indexPath) as? UserCell,
             let user = users.getSafely(index: indexPath.section)?.getSafely(index: indexPath.row) else {
-                fatalError()
+                return tableView.emptyCell(indexPaht: indexPath)
         }
         cell.bind(user: user)
         return cell
     }
-
 }

@@ -17,6 +17,7 @@
 		252471C1240F796400EE2A85 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252471C0240F796400EE2A85 /* UserModel.swift */; };
 		252471C4240F81BA00EE2A85 /* Array+getSafely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252471C3240F81BA00EE2A85 /* Array+getSafely.swift */; };
 		252471C6240F863200EE2A85 /* Dictionary+getSafely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252471C5240F863200EE2A85 /* Dictionary+getSafely.swift */; };
+		252471C8240F924500EE2A85 /* UITableView+emptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252471C7240F924500EE2A85 /* UITableView+emptyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		252471C0240F796400EE2A85 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		252471C3240F81BA00EE2A85 /* Array+getSafely.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+getSafely.swift"; sourceTree = "<group>"; };
 		252471C5240F863200EE2A85 /* Dictionary+getSafely.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+getSafely.swift"; sourceTree = "<group>"; };
+		252471C7240F924500EE2A85 /* UITableView+emptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+emptyCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				252471C3240F81BA00EE2A85 /* Array+getSafely.swift */,
 				252471C5240F863200EE2A85 /* Dictionary+getSafely.swift */,
+				252471C7240F924500EE2A85 /* UITableView+emptyCell.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				252471AB240F765600EE2A85 /* ViewController.swift in Sources */,
 				252471A7240F765600EE2A85 /* AppDelegate.swift in Sources */,
 				252471C1240F796400EE2A85 /* UserModel.swift in Sources */,
+				252471C8240F924500EE2A85 /* UITableView+emptyCell.swift in Sources */,
 				252471C6240F863200EE2A85 /* Dictionary+getSafely.swift in Sources */,
 				252471BD240F778500EE2A85 /* UserCell.swift in Sources */,
 			);
